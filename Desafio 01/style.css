@@ -6,15 +6,20 @@
 
 body {
     background-color: #0F0D13;
+    height: 100vh;
 }
 
 #app {
     display: grid;
+    grid-template-columns: max-content max-content;
     grid-template-areas: 
     'A B'
     'A C';
 
     gap: 32px;
+
+    place-content: center;
+    height: 100vh;
 }
 
 #player-1 {
@@ -39,4 +44,8 @@ body {
 .player {
     background-color: #2A2141;
     padding: 28px;
+}
+
+#player-1 .wrapper {
+   width: 190px; 
 }
